@@ -9,11 +9,11 @@ app.use(bodyParser.json());
 
 
 
-const api = "/api/messages";
-app.post( api, mc.create );
-app.get( api, mc.read );
-app.put( `${api}/:id`, mc.update );
-app.delete( `${api}/:id`, mc.delete );
+const url = "/api/messages";
+app.post( url, mc.create );
+app.get( url, mc.read );
+app.put( `${url}/:id`, mc.update );
+app.delete( `${url}/:id`, mc.delete );
 
 
 
